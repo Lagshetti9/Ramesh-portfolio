@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #929191;
+  color: #fff;
+  padding: 10px 5px;
+  text-align: center;
+}
+/* General styles for the header */
+header {
+  background-color: #333; /* Dark background for header */
+  padding: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow under header */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Styling the navigation bar */
+nav ul {
+  list-style: none; /* Removes default bullet points */
+  display: flex; /* Align items horizontally */
+  justify-content: center; /* Center the navigation items */
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling individual list items */
+nav ul li {
+  margin: 0 20px; /* Space between the menu items */
+}
+
+/* Styling the links */
+nav ul li a {
+  text-decoration: none; /* Remove underline */
+  color: #fff; /* White text */
+  font-size: 1.2em; /* Larger font size for more prominence */
+  font-family: "Arial", sans-serif; /* A clean font */
+  padding: 10px 20px; /* Adds padding inside links */
+  border-radius: 4px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effects for links */
+nav ul li a:hover {
+  background-color: #555; /* Darker background on hover */
+  color: #f4f4f4; /* Slightly lighter text color */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow on hover */
+  transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0; /* More space between items on mobile */
+  }
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+.hero {
+  background: url(../accets/bg.jpg) no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #0f0f0f;
+}
+
+.hero h1:hover {
+  color: #3f3f3f;
+  transform: translateY(0px); /* Slight upward movement */
+
+  text-shadow: 0 2px 10px #ffffff; /* Light glow effect on text */
+}
+.hero p {
+  font-size: 1.5rem;
+  color: #2c1919;
+}
+
+.hero .btn {
+  background-color: #685959;
+  color: #221e1e;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+.hero .btn:hover {
+  background-color: #555; /* Lighter shade of the button */
+  color: #f4f4f4;
+  transform: translateY(-5px); /* Slight upward movement */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.7); /* Light glow effect on text */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.about,
+.projects,
+.contact {
+  text-align: center;
+  color: #303030;
+}
+.projects {
+  background-color: #beb8b8;
+}
+.projects div div {
+  margin: 40px;
+}
+
+.contact {
+  background-color: #dbdbdb;
+}
+/* Container for projects section */
+.projects .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Project cards basic styling */
+.project-card {
+  background-color: #7e7e7e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(231, 222, 222, 0.1);
+  margin-bottom: 20px;
+  margin: 4 0px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #e0dfdf;
+}
+
+/* Hover effect for project cards */
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(168, 226, 213, 0.2);
+}
+
+/* Image inside project cards */
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Responsive layout for project cards */
+.projects .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Flex properties for individual cards */
+.project-card {
+  flex: 1 1 calc(33.333% - 20px); /* 3 cards per row with 20px gap */
+  margin: 10px;
+}
+
+/* Responsive adjustments for tablets */
+@media (max-width: 768px) {
+  .project-card {
+    flex: 1 1 calc(50% - 20px); /* 2 cards per row */
+  }
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 480px) {
+  .project-card {
+    flex: 1 1 100%; /* 1 card per row */
+  }
+}
+
+.about {
+  background: rgb(190, 189, 188);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+.about {
+  justify-content: space-between;
+}
+.about h1:hover {
+  transform: translateY(5px); /* Slight upward movement */
+  box-shadow: 10px 10px 12px 10px rgba(10, 255, 71, 0.3); /* Enhance shadow on hover */
+  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.7);
+  color: #030303;
+}
+.about img:ho {
+  box-shadow: 10px 10px 12px 10px rgba(10, 255, 71, 0.3); /* Enhance shadow on hover */
+  border-image: 0 2px 10px rgba(255, 255, 255, 0.7);
+  color: #030303;
+}
+.project-card {
+  background-color: #272d30;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero .btn {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+}
+/* General styles for the about section */
+.about {
+  padding: 40px;
+  background-color: #e0dfdf;
+}
+
+/* Container to hold both image and content side by side on larger screens */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Image container */
+.about-image-container {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+/* Responsive image */
+.about-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Content container */
+.about-content {
+  flex: 1 1 55%;
+  padding: 20px;
+}
+
+/* Responsive text */
+.about h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.about h5 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.about p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Media queries for responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content {
+    padding: 10px;
+  }
+
+  .about h1 {
+    font-size: 1.8em;
+  }
+
+  .about h5 {
+    font-size: 1.3em;
+  }
+
+  .about p {
+    font-size: 1em;
+  }
+}
+
+/* For small mobile screens */
+@media (max-width: 480px) {
+  .about h1 {
+    font-size: 1.5em;
+  }
+
+  .about h5 {
+    font-size: 1.2em;
+  }
+
+  .about p {
+    font-size: 0.9em;
+  }
+}
