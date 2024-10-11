@@ -13,3 +13,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+
+const navbar = document.getElementById("navbar");
+const minimizeBtn = document.getElementById("minimizeBtn");
+const maximizeBtn = document.getElementById("maximizeBtn");
+
+minimizeBtn.addEventListener("click", () => {
+  navbar.classList.add("minimized");
+  minimizeBtn.style.display = "none";
+  maximizeBtn.style.display = "inline";
+});
+
+maximizeBtn.addEventListener("click", () => {
+  navbar.classList.remove("minimized");
+  minimizeBtn.style.display = "inline";
+  maximizeBtn.style.display = "none";
+});

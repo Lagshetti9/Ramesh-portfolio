@@ -85,6 +85,26 @@ nav ul li a {
   text-decoration: none;
   font-size: 1.1rem;
 }
+
+/* Styling for the navbar and buttons */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.menu-controls {
+  margin-left: auto;
+}
+
+#navbar {
+  transition: height 0.3s ease;
+}
+
+.minimized {
+  display: none;
+}
+
 .hero {
   background: url(../accets/bg.jpg) no-repeat center center/cover;
   height: 100vh;
@@ -104,6 +124,7 @@ nav ul li a {
 
   text-shadow: 0 2px 10px #ffffff; /* Light glow effect on text */
 }
+
 .hero p {
   font-size: 1.5rem;
   color: #2c1919;

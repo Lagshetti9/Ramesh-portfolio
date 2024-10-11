@@ -7,18 +7,28 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/style.css" />
     <script defer src="./js/script.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
   </head>
   <body>
     <header>
       <nav>
-        <ul>
-
+        <ul class="navbar" id="navbar">
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="menu-controls">
+
+          <i class='bx bx-menu' id="minimizeBtn"></i>
+          <i class='bx bx-menu' id="maximizeBtn" style="display:none;"></i>
+
+          <!-- <button id="minimizeBtn">Minimize</button>
+          <button id="maximizeBtn" style="display:none;">Maximize</button> -->
+        </div>
       </nav>
     </header>
+    
 
     <section id="home" class="hero">
       <div class="container">
